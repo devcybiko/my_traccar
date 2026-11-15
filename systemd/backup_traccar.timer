@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Traccar MySQL backup timer
+
+[Timer]
+OnCalendar=*-*-* 03:00:00 America/New_York
+Persistent=true
+RandomizedDelaySec=0
+Unit=backup_traccar.service
+
+[Install]
+WantedBy=timers.target

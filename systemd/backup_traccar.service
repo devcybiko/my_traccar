@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup Traccar MySQL database
+Wants=mysql.service
+After=mysql.service
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/local/sbin/backup_traccar.sh

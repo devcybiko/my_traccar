@@ -1,0 +1,23 @@
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*secret*
+*password*
+
+# Live Traccar configuration
+traccar.xml
+!traccar.xml.example
+
+# Database backups
+*.sql
+*.sql.gz
+*.dump
+*.bak
+
+# Temporary files
+*.tmp
+*.swp
+*~
